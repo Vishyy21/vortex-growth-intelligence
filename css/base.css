@@ -1,0 +1,47 @@
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   BASE — base.css
+   Resets · fonts · body · global typography
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--txt1);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: var(--transition-theme);
+}
+
+body {
+    font-family: var(--f-ui);
+    font-size: 14px;
+    line-height: var(--lh-normal);
+}
+
+.serif {
+    font-family: var(--f-serif) !important;
+    font-style: italic;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+.kpi-value,
+.hero-stat-val {
+    font-variant-numeric: tabular-nums;
+    letter-spacing: var(--ls-tight);
+    font-weight: 600;
+}
