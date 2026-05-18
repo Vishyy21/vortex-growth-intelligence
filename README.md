@@ -189,10 +189,5 @@ Currently under active development with planned enhancements for:
 * advanced filtering
 * workflow automation
 
----
-
-# Author
-
-Vishesh Nigam
 
 GitHub: https://github.com/visheshnigam
