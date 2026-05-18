@@ -1,108 +1,198 @@
-# Vortex — Growth Intelligence Operating System
+# VORTEX — Marketing Intelligence & KPI Analytics Dashboard
 
-> Premium dark SaaS dashboard · v3.2 · Production-Ready Architecture
+VORTEX is a modern marketing analytics dashboard designed to help teams monitor campaign performance, track KPIs, and make faster data-driven decisions through interactive visualizations and automated reporting workflows.
 
----
-
-## Folder Structure
-
-```
-vortex-dashboard/
-│
-├── index.html                  # Lightweight HTML shell (no inline CSS/JS)
-│
-├── assets/
-│   ├── icons/                  # SVG icon assets (future)
-│   ├── logos/                  # Brand logo files (future)
-│   ├── images/                 # Static images (future)
-│   ├── fonts/                  # Self-hosted fonts (future)
-│   └── backgrounds/            # Background textures (future)
-│
-├── css/
-│   ├── variables.css           # Design tokens: colors, spacing, easing, typography
-│   ├── base.css                # Resets, body, global typography
-│   ├── layout.css              # App shell, main, content grid
-│   ├── sidebar.css             # Sidebar, nav items, active states
-│   ├── topbar.css              # Topbar, icon buttons
-│   ├── hero.css                # Hero section, editorial blocks
-│   ├── cards.css               # Panels, KPI cards, buttons, chips, toasts
-│   ├── charts.css              # Chart wrappers, progress bars
-│   ├── tables.css              # Table typography overrides
-│   ├── ai.css                  # AI search bar, signal modules
-│   ├── animations.css          # Keyframes, fade-up, stagger delays, scroll reveal
-│   ├── cursor.css              # Custom cursor + glow
-│   ├── loader.css              # Startup loader
-│   ├── pages.css               # Ambient orbs, particles, grain, vignette
-│   └── responsive.css          # All media queries
-│
-├── js/
-│   ├── app.js                  # Bootstrap entry point (DOMContentLoaded)
-│   ├── data.js                 # VX_DATA: all datasets, KPI values, page metadata
-│   ├── utils.js                # Shared renderers: renderKpi, renderBar, animateCounter…
-│   ├── navigation.js           # SPA routing, navigateTo(), renderPage()
-│   ├── theme.js                # Dark/light toggle, localStorage persistence
-│   ├── cursor.js               # Custom cursor tracking
-│   ├── animations.js           # Card 3D tilt / magnetic hover
-│   ├── charts.js               # Chart.js init, sparklines, cinematicTooltip()
-│   ├── particles.js            # Lightweight CSS particle generator
-│   ├── loader.js               # Startup loader fade-out
-│   ├── notifications.js        # Toast system, openCmd()
-│   │
-│   └── pages/
-│       ├── dashboard.js        # Hero, KPI grid, revenue chart, channel bars
-│       ├── campaigns.js        # Attribution doughnut, campaign table
-│       ├── audience.js         # Radar chart, cohort retention bars
-│       ├── roi.js              # Editorial block, forecast line chart
-│       ├── ai.js               # 6-card signal stream grid
-│       ├── reports.js          # Executive briefings table
-│       └── settings.js         # Theme & preferences panel
-│
-└── README.md
-```
+The platform centralizes campaign data into a single dashboard experience, enabling users to analyze marketing performance metrics such as ROAS, CAC, CTR, conversion trends, and channel-level insights in real time.
 
 ---
 
-## Script Load Order
+# Features
 
-Scripts must load in this order (all in `index.html` before `</body>`):
-
-1. `data.js` — constants, no DOM deps
-2. `utils.js` — pure render helpers, no DOM deps
-3. Feature modules: `theme`, `cursor`, `particles`, `loader`, `notifications`, `animations`, `charts`
-4. Page renderers: `pages/dashboard`, `campaigns`, `audience`, `roi`, `ai`, `reports`, `settings`
-5. `navigation.js` — depends on page renderers
-6. `app.js` — bootstrap, must be last
-
----
-
-## Tech Stack
-
-| Layer       | Technology                    |
-|-------------|-------------------------------|
-| Markup      | Semantic HTML5                |
-| Styling     | Vanilla CSS, CSS Variables    |
-| Charts      | Chart.js 4.4.1 (CDN)         |
-| Typography  | Satoshi (Fontshare) + Instrument Serif (Google Fonts) |
-| JS          | Vanilla ES6+, no framework   |
+* Interactive KPI dashboards for campaign analytics
+* ROAS, CAC, CTR, and conversion tracking
+* Cross-filter campaign analysis
+* Real-time dashboard updates
+* CSV-based campaign data ingestion
+* Automated reporting workflows
+* Channel-wise performance comparison
+* Trend visualization and analytics
+* Responsive glassmorphism-inspired UI
+* Dynamic dashboard cards and visual insights
 
 ---
 
-## Development
+# Tech Stack
 
-Open `index.html` directly in a browser — no build step required.
+## Frontend
 
-For live reload during development:
+* JavaScript
+* HTML5
+* CSS3
+* Chart.js
+
+## Data & Analytics
+
+* SQL
+* CSV Processing
+* KPI Calculations
+* Marketing Analytics Workflows
+
+## Visualization
+
+* Interactive Dashboards
+* Cross-filter Analytics
+* Real-time KPI Reporting
+
+---
+
+# Problem Statement
+
+Marketing data is often fragmented across spreadsheets, ad managers, and reporting tools, making it difficult to:
+
+* monitor campaign performance efficiently
+* identify high-performing channels
+* compare KPIs across campaigns
+* generate quick business insights
+
+VORTEX solves this by providing a centralized analytics dashboard that simplifies campaign tracking and performance analysis.
+
+---
+
+# Key Metrics Tracked
+
+* ROAS (Return on Ad Spend)
+* CAC (Customer Acquisition Cost)
+* CTR (Click Through Rate)
+* Conversion Rate
+* Campaign Revenue
+* Engagement Trends
+* Channel Performance
+
+---
+
+# How It Works
+
+1. Upload campaign datasets in CSV format
+2. Data is processed and structured for analytics
+3. KPI calculations are generated automatically
+4. Dashboards update dynamically with visual insights
+5. Users can filter campaigns and compare channel performance in real time
+
+---
+
+# Dashboard Modules
+
+## Campaign Overview
+
+Displays:
+
+* total spend
+* total revenue
+* conversions
+* campaign ROI
+
+## Performance Analytics
+
+Tracks:
+
+* ROAS trends
+* CAC comparison
+* CTR analysis
+* conversion performance
+
+## Channel Insights
+
+Compares:
+
+* marketing channels
+* campaign efficiency
+* audience engagement
+
+## Trend Monitoring
+
+Visualizes:
+
+* campaign growth
+* performance fluctuations
+* revenue trends over time
+
+---
+
+# Business Impact
+
+VORTEX was built to simulate how modern growth and analytics teams:
+
+* monitor campaign performance
+* automate reporting workflows
+* analyze marketing efficiency
+* improve budget allocation decisions
+* centralize KPI visibility
+
+---
+
+# Future Improvements
+
+* AI-powered campaign recommendations
+* Forecasting and trend prediction
+* Real-time API integrations
+* Custom dashboard layouts
+* User authentication and saved reports
+* Exportable analytics summaries
+* Dark/light dashboard themes
+
+---
+
+# Learning Outcomes
+
+Through this project, I learned:
+
+* dashboard engineering
+* KPI analysis workflows
+* SQL-based analytics
+* interactive data visualization
+* structured data processing
+* marketing analytics concepts
+* real-time reporting design
+
+---
+
+# Screenshots
+
+Add dashboard screenshots here.
+
+Example:
+
+* Campaign Overview Dashboard
+* KPI Analytics View
+* Channel Performance Analysis
+* Trend Monitoring Dashboard
+
+---
+
+# Installation
+
 ```bash
-npx serve .
-# or
-python3 -m http.server 8080
+git clone https://github.com/yourusername/vortex-dashboard.git
+cd vortex-dashboard
 ```
+
+Open the project in your preferred environment and run locally.
 
 ---
 
-## Deployment
+# Project Status
 
-Drop the entire `vortex-dashboard/` folder on any static host:
-- Vercel, Netlify, GitHub Pages, Cloudflare Pages, AWS S3 + CloudFront
+Currently under active development with planned enhancements for:
 
-No build step. No dependencies to install.
+* AI-assisted analytics
+* customizable dashboards
+* advanced filtering
+* workflow automation
+
+---
+
+# Author
+
+Vishesh Nigam
+
+GitHub: https://github.com/visheshnigam
