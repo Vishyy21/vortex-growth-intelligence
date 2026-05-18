@@ -158,20 +158,13 @@ Through this project, I learned:
 
 # Screenshots
 
-Add dashboard screenshots here.
-
-Example:
-
-* Campaign Overview Dashboard
-* KPI Analytics View
-* Channel Performance Analysis
-* Trend Monitoring Dashboard
+<img width="1907" height="963" alt="Screenshot 2026-05-18 194110" src="https://github.com/user-attachments/assets/5f29a898-c014-4c2a-93ef-2d21345204d3" />
 
 ---
 
 # Installation
 
-```bash
+```bash id="yspt22"
 git clone https://github.com/yourusername/vortex-dashboard.git
 cd vortex-dashboard
 ```
@@ -188,6 +181,3 @@ Currently under active development with planned enhancements for:
 * customizable dashboards
 * advanced filtering
 * workflow automation
-
-
-GitHub: https://github.com/visheshnigam
